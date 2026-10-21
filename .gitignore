@@ -1,0 +1,8 @@
+.env
+.env.*
+*.bak
+*.tmp
+__pycache__/
+.DS_Store
+Thumbs.db
+matbou3-backup-*.json

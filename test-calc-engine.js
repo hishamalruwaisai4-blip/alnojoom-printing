@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict');
+const {recommendUps,calculatePrintJob}=require('./calc-engine.js');
+assert.equal(recommendUps(148,210,320,450),4,'A5 on SRA3: 4-up by rotation');
+const base={copies:1000,colors:4,sides:2,setsPerCopy:1,trimW:148,trimH:210,sheetW:320,sheetH:450,ups:0,wastePct:5,makeready:100,paperUnit:35,method:'offset',plateUnit:800,pressSetup:1000,pressPerThousand:500,clickUnit:8,pressImpressions:0,clicksPerSheet:1,inkPerThousand:0,laminationPerCopy:0,foilPerCopy:0,uvPerCopy:0,bindingPerCopy:0,finishSetup:0,otherDirect:0,overheadFixed:1800,laborFixed:2200,overheadPct:0,markupPct:30,taxPct:0,discountPct:0};
+const o=calculatePrintJob(base);
+assert.equal(o.canImpose,true);assert.equal(o.suggestedUps,4);assert.equal(o.neededBeforeWaste,250);assert.equal(o.wasteSheets,13);assert.equal(o.totalSheets,363);assert.equal(o.plates,6400);assert.equal(o.clicks,0);assert.ok(o.quoteTotal>o.cost);
+const d=calculatePrintJob({...base,method:'digital'});assert.equal(d.plates,0);assert.equal(d.clicks,726);assert.equal(d.press,5808);
+const d3=calculatePrintJob({...base,method:'digital',clicksPerSheet:3});assert.equal(d3.clicks,2178);
+const tax=calculatePrintJob({...base,taxPct:15,discountPct:10});assert.ok(tax.quoteTotal<o.quoteTotal*1.15);assert.ok(tax.quoteTotal>tax.cost);
+const handmade=calculatePrintJob({...base,ups:2});assert.equal(handmade.ups,2);assert.equal(handmade.neededBeforeWaste,500);
+const invalid=calculatePrintJob({...base,trimW:400,trimH:600,sheetW:320,sheetH:450,ups:0});assert.equal(invalid.canImpose,false);assert.equal(invalid.neededBeforeWaste,0);
+const officialExample=calculatePrintJob({copies:1000,colors:4,sides:1,setsPerCopy:1,trimW:148,trimH:210,sheetW:594,sheetH:841,ups:4,wastePct:0,makeready:30,paperUnit:50,method:'offset',plateUnit:800,pressSetup:0,pressImpressions:2000,pressPerThousand:3000,laminationPerCopy:2.5,overheadFixed:1800,laborFixed:2200,markupPct:30});
+assert.equal(officialExample.totalSheets,280);assert.equal(officialExample.paper,14000);assert.equal(officialExample.plates,3200);assert.equal(officialExample.press,6000);assert.equal(officialExample.lamination,2500);assert.equal(officialExample.direct,25700);assert.equal(officialExample.indirect,4000);assert.equal(officialExample.cost,29700);assert.equal(officialExample.quoteTotal,38610);
+console.log('All print-cost tests passed, including the reference-site example (14,000 / 3,200 / 6,000 / 2,500 -> 29,700 -> 38,610).');
