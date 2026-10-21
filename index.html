@@ -3,55 +3,161 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0ca26f"><meta name="description" content="النجوم للطباعة — نظام تسعير المطابع التجارية والرقمية">
-  <title>النجوم للطباعة — نظام التسعير</title>
+  <title>النجوم للطباعة — نظام التسعير الاحترافي</title>
   <link rel="icon" href="assets/alnojoom-mark.svg"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header"><div class="container nav">
   <a class="brand" href="#top" aria-label="النجوم للطباعة، الصفحة الرئيسية"><img src="assets/alnojoom-mark.svg" alt=""/><span>النجوم للطباعة</span></a>
-  <nav><a href="#calculator">حاسبة التسعير</a><a href="#features">المزايا</a><a href="#faq">الأسئلة الشائعة</a></nav>
+  <nav><a href="#calculator">حاسبة التسعير</a><a href="#features">المزايا التشغيلية</a><a href="#faq">الأسئلة الشائعة</a></nav>
   <a class="button button-small" href="#calculator">ابدأ طلبية جديدة</a>
   <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
 </div></header>
 <main id="top">
   <section class="hero"><div class="container hero-grid">
-    <div class="hero-copy"><span class="pill"><i></i> يعمل 100% بدون إنترنت</span>
+    <div class="hero-copy"><span class="pill"><i></i> يعمل 100% بدون إنترنت ومحلياً</span>
       <h1>ودّع الآلة الحاسبة<br>ونزيف الأرباح..<br><em>احسب تكلفة أي طلبية<br>طباعة في 5 ثوانٍ</em></h1>
       <p>نظام التسعير المتكامل للمطابع التجارية والرقمية: احتساب أفرخ الورق، الهالك، الزنكات، السحبات، وما بعد الطباعة بدقة متناهية وبدون إنترنت.</p>
-      <div class="hero-points"><span>✓ حساب فوري</span><span>✓ بياناتك على جهازك</span><span>✓ عروض أسعار</span></div><div class="hero-actions"><a class="button" href="#calculator">افتح نظام التسعير</a><a class="button button-outline" href="#features">استكشف المزايا</a></div>
+      <div class="hero-points"><span>✓ حساب فوري ذكي</span><span>✓ بياناتك محفوظة بأمان على جهازك</span><span>✓ إصدار عروض أسعار فورية</span></div><div class="hero-actions"><a class="button" href="#calculator">افتح نظام التسعير</a><a class="button button-outline" href="#features">استكشف المزايا</a></div>
     </div>
   </div></section>
+
+  <!-- قسم المزايا التشغيلية (تم تفعيل البطاقات وجعلها تفاعلية عند النقر للانتقال للحاسبة) -->
   <section class="section features" id="features"><div class="container"><div class="section-title"><span class="eyebrow">المزايا التشغيلية</span><h2>يحسب التكاليف المباشرة وغير المباشرة في خطوة واحدة</h2><p>لأن الربح الحقيقي يُكشَف حين تحسب كل شيء — من أفرخ الورق والزنكات حتى حصة الإيجار والكهرباء ورواتب الفنيين.</p></div>
     <div class="feature-grid">
-      <article class="feature"><span class="feature-icon">✂️</span><div><h3>الخام والقص <small>تكلفة مباشرة</small></h3><p>أفرخ الورق • نموذج التقطيع الأمثل • حساب نسب الهالك بدقة</p></div></article>
-      <article class="feature"><span class="feature-icon">🎨</span><div><h3>ما قبل الطباعة <small>تكلفة مباشرة</small></h3><p>أجور التصميم • فرز الألوان وتجهيز زنكات CTP</p></div></article>
-      <article class="feature"><span class="feature-icon">⚙️</span><div><h3>تشغيل الماكينات <small>تكلفة مباشرة</small></h3><p>أوفست (سحبات وسرعة الماكينة) • رقمي (نقرات وحبر)</p></div></article>
-      <article class="feature"><span class="feature-icon">📦</span><div><h3>ما بعد الطباعة <small>تكلفة مباشرة</small></h3><p>سولوفان لامع/مط • بصمة حرارية • يوفي موضعي • تكسير وتجليد</p></div></article>
-      <article class="feature"><span class="feature-icon">🏭</span><div><h3>تكاليف غير مباشرة <small>تكلفة تشغيلية</small></h3><p>توزيع إيجار المطبعة • الكهرباء والديزل • رواتب العمالة الثابتة</p></div></article>
-      <article class="feature"><span class="feature-icon">📄</span><div><h3>عرض السعر <small>تكلفة تشغيلية</small></h3><p>عرض قابل للطباعة باسم مطبعتك • إرسال مباشر عبر واتساب في ثوانٍ</p></div></article>
+      <article class="feature interactive-card" onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'});"><span class="feature-icon">✂️</span><div><h3>الخام والقص <small>تكلفة مباشرة</small></h3><p>أفرخ الورق • نموذج التقطيع الأمثل • حساب نسب الهالك بدقة</p></div></article>
+      <article class="feature interactive-card" onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'});"><span class="feature-icon">🎨</span><div><h3>ما قبل الطباعة <small>تكلفة مباشرة</small></h3><p>أجور التصميم • فرز الألوان وتجهيز زنكات CTP</p></div></article>
+      <article class="feature interactive-card" onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'});"><span class="feature-icon">⚙️</span><div><h3>تشغيل الماكينات <small>تكلفة مباشرة</small></h3><p>أوفست (سحبات وسرعة الماكينة) • رقمي (نقرات وحبر)</p></div></article>
+      <article class="feature interactive-card" onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'});"><span class="feature-icon">📦</span><div><h3>ما بعد الطباعة <small>تكلفة مباشرة</small></h3><p>سولوفان لامع/مط • بصمة حرارية • يوفي موضعي • تكسير وتجليد</p></div></article>
+      <article class="feature interactive-card" onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'});"><span class="feature-icon">🏭</span><div><h3>تكاليف غير مباشرة <small>تكلفة تشغيلية</small></h3><p>توزيع إيجار المطبعة • الكهرباء والديزل • رواتب العمالة الثابتة</p></div></article>
+      <article class="feature interactive-card" onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'});"><span class="feature-icon">📄</span><div><h3>عرض السعر <small>تكلفة تشغيلية</small></h3><p>عرض قابل للطباعة باسم مطبعتك • إرسال مباشر عبر واتساب في ثوانٍ</p></div></article>
     </div>
   </div></section>
+
   <section class="section calculator-section" id="calculator"><div class="container">
-    <div class="workbench-head"><div><span class="eyebrow">نظام تسعير محلي للمطبعة</span><h2>حاسبة تكلفة وتسعير الطلبيات</h2><p>أدخل مواصفات الطلبية وتكاليف مطبعتك؛ يتحدث الحساب تلقائياً ويبقى محفوظاً على هذا الجهاز.</p></div><div class="workbench-tools"><button class="button button-outline" id="new-order">＋ طلبية جديدة</button><button class="button button-outline" id="backup-data">نسخة احتياطية</button><label class="button button-outline import-button">استيراد نسخة<input id="restore-file" type="file" accept="application/json" hidden></label></div></div>
-    <div class="offline-badge">● حساب محلي — لا يلزم اتصال بالإنترنت</div>
+    <div class="workbench-head">
+      <div><span class="eyebrow">نظام تسعير محلي للمطبعة</span><h2>حاسبة تكلفة وتسعير الطلبيات</h2><p>أدخل مواصفات الطلبية وتكاليف مطبعتك؛ يتحدث الحساب تلقائياً ويبقى محفوظاً على هذا الجهاز.</p></div>
+      <div class="workbench-tools">
+        <button class="button button-outline" id="new-order" title="إنشاء طلبية جديدة فارغة">＋ طلبية جديدة</button>
+        <button class="button button-outline" id="backup-data" title="تصدير ملف الاحتياط">نسخة احتياطية</button>
+        <label class="button button-outline import-button" title="استعادة نسخة سابقة">استيراد نسخة<input id="restore-file" type="file" accept="application/json" hidden></label>
+      </div>
+    </div>
+    <div class="offline-badge">● حساب محلي متقدم — يعمل بدون إنترنت مع الحفظ التلقائي</div>
     <div class="workbench-grid">
       <div class="quote-card job-form" id="job-form">
-        <div class="quote-top"><div><strong>بيانات أمر الطباعة</strong><p id="order-caption">طلبية #1047 — كتيب A5</p><small id="order-meta">1,000 نسخة • أوفست</small></div><span class="status-chip">حفظ تلقائي للمدخلات</span></div>
-        <div class="form-group"><h3>١. مواصفات المنتج والخام</h3><div class="field-grid"><label>اسم العميل<input data-field="customer" placeholder="اسم العميل"></label><label>وصف المنتج<input data-field="jobName" value="كتيب A5"></label><label>عدد النسخ المطلوبة<input data-field="copies" type="number" min="1" value="1000"></label><label>عدد الألوان لكل وجه<input data-field="colors" type="number" min="1" max="8" value="4"></label><label>الأوجه المطبوعة للنسخة<input data-field="sides" type="number" min="1" max="2" value="1"></label><label>أوراق مطبعية لكل نسخة<input data-field="setsPerCopy" type="number" min="1" value="1"></label><label>عرض المنتج النهائي (ملم)<input data-field="trimW" type="number" min="1" value="148"></label><label>ارتفاع المنتج النهائي (ملم)<input data-field="trimH" type="number" min="1" value="210"></label><label>عرض فرخ الطباعة (ملم)<input data-field="sheetW" type="number" min="1" value="594"></label><label>ارتفاع فرخ الطباعة (ملم)<input data-field="sheetH" type="number" min="1" value="841"></label><label>عدد النسخ على الفرخ (0=اقتراح آلي)<input data-field="ups" type="number" min="0" value="4"></label><label>سعر الفرخ الواحد<input data-field="paperUnit" type="number" min="0" value="50"></label><label>هالك التشغيل (%)<input data-field="wastePct" type="number" min="0" max="100" value="0"></label><label>أفرخ التجهيز/الضبط<input data-field="makeready" type="number" min="0" value="30"></label></div><div class="imposition-hint" id="imposition-hint">—</div></div>
-        <div class="form-group"><h3>٢. ما قبل الطباعة والطباعة</h3><div class="field-grid"><label>طريقة الطباعة<select data-field="method"><option value="offset">أوفست</option><option value="digital">رقمي</option></select></label><label>تكلفة التصميم<input data-field="designCost" type="number" min="0" value="0"></label><label>تجهيز ما قبل الطباعة<input data-field="prepressCost" type="number" min="0" value="0"></label><label class="offset-only">سعر الزنكة الواحدة<input data-field="plateUnit" type="number" min="0" value="800"></label><label class="offset-only">تجهيز الماكينة لكل وجه<input data-field="pressSetup" type="number" min="0" value="0"></label><label class="offset-only">عدد السحبات المحتسب<input data-field="pressImpressions" type="number" min="0" value="2000"></label><label class="offset-only">كلفة كل 1,000 سحبة (ريال)<input data-field="pressPerThousand" type="number" min="0" value="3000"></label><label class="digital-only">كلفة النقرة/الوجه الواحد<input data-field="clickUnit" type="number" min="0" value="8"></label><label class="digital-only">نقرات لكل فرخ/وجه<input data-field="clicksPerSheet" type="number" min="1" value="1"></label><label class="digital-only">حبر إضافي لكل 1,000 نقرة<input data-field="inkPerThousand" type="number" min="0" value="0"></label></div></div>
-        <div class="form-group"><h3>٣. ما بعد الطباعة <small>أدخل كلفة الوحدة للنسخة الواحدة</small></h3><div class="field-grid"><label>سولوفان/تغليف للنسخة<input data-field="laminationPerCopy" type="number" min="0" step="0.1" value="2.5"></label><label>بصمة حرارية/فويل للنسخة<input data-field="foilPerCopy" type="number" min="0" value="0"></label><label>يوفي موضعي للنسخة<input data-field="uvPerCopy" type="number" min="0" value="0"></label><label>قص/تكسير/تجليد للنسخة<input data-field="bindingPerCopy" type="number" min="0" value="0"></label><label>تجهيزات ما بعد الطباعة للطلبية<input data-field="finishSetup" type="number" min="0" value="0"></label><label>تكاليف مباشرة أخرى<input data-field="otherDirect" type="number" min="0" value="0"></label></div></div>
-        <div class="form-group"><h3>٤. المصاريف والتسعير</h3><div class="field-grid"><label>حصة الإيجار/الكهرباء<input data-field="overheadFixed" type="number" min="0" value="1800"></label><label>حصة الرواتب/العمالة<input data-field="laborFixed" type="number" min="0" value="2200"></label><label>مصاريف غير مباشرة كنسبة (%)<input data-field="overheadPct" type="number" min="0" value="0"></label><label>زيادة الربح على التكلفة (%)<input data-field="markupPct" type="number" min="0" value="30"></label><label>ضريبة/رسوم (%)<input data-field="taxPct" type="number" min="0" value="0"></label><label>الخصم للعميل (%)<input data-field="discountPct" type="number" min="0" max="100" value="0"></label><label>صلاحية العرض<input data-field="validity" value="7 أيام"></label><label>شروط/ملاحظات<input data-field="terms" placeholder="مثال: 50% مقدماً"></label></div></div>
-        <div class="form-group shop-settings"><h3>إعدادات العرض وهوية مطبعتك</h3><div class="field-grid"><label>اسم المطبعة<input data-field="shopName" placeholder="اسم مطبعتك"></label><label>هاتف المطبعة<input data-field="shopPhone" placeholder="+967..."></label></div></div>
+        <div class="quote-top">
+          <div><strong>بيانات أمر الطباعة</strong><p id="order-caption">طلبية #1047 — كتيب A5</p><small id="order-meta">1,000 نسخة • أوفست</small></div>
+          <span class="status-chip">حفظ تلقائي للمدخلات</span>
+        </div>
+        
+        <div class="form-group">
+          <h3>١. مواصفات المنتج والخام</h3>
+          <div class="field-grid">
+            <label>اسم العميل<input data-field="customer" placeholder="اسم العميل"></label>
+            <label>وصف المنتج<input data-field="jobName" value="كتيب A5"></label>
+            <label>عدد النسخ المطلوبة<input data-field="copies" type="number" min="1" value="1000"></label>
+            <label>عدد الألوان لكل وجه<input data-field="colors" type="number" min="1" max="8" value="4"></label>
+            <label>الأوجه المطبوعة للنسخة<input data-field="sides" type="number" min="1" max="2" value="1"></label>
+            <label>أوراق مطبعية لكل نسخة<input data-field="setsPerCopy" type="number" min="1" value="1"></label>
+            <label>عرض المنتج النهائي (ملم)<input data-field="trimW" type="number" min="1" value="148"></label>
+            <label>ارتفاع المنتج النهائي (ملم)<input data-field="trimH" type="number" min="1" value="210"></label>
+            <label>عرض فرخ الطباعة (ملم)<input data-field="sheetW" type="number" min="1" value="594"></label>
+            <label>ارتفاع فرخ الطباعة (ملم)<input data-field="sheetH" type="number" min="1" value="841"></label>
+            <label>عدد النسخ على الفرخ (0=اقتراح آلي)<input data-field="ups" type="number" min="0" value="4"></label>
+            <label>سعر الفرخ الواحد<input data-field="paperUnit" type="number" min="0" value="50"></label>
+            <label>هالك التشغيل (%)<input data-field="wastePct" type="number" min="0" max="100" value="0"></label>
+            <label>أفرخ التجهيز/الضبط<input data-field="makeready" type="number" min="0" value="30"></label>
+          </div>
+          <div class="imposition-hint" id="imposition-hint">—</div>
+        </div>
+
+        <div class="form-group">
+          <h3>٢. ما قبل الطباعة والطباعة</h3>
+          <div class="field-grid">
+            <label>طريقة الطباعة
+              <select data-field="method">
+                <option value="offset">أوفست</option>
+                <option value="digital">رقمي</option>
+              </select>
+            </label>
+            <label>تكلفة التصميم<input data-field="designCost" type="number" min="0" value="0"></label>
+            <label>تجهيز ما قبل الطباعة<input data-field="prepressCost" type="number" min="0" value="0"></label>
+            <label class="offset-only">سعر الزنكة الواحدة<input data-field="plateUnit" type="number" min="0" value="800"></label>
+            <label class="offset-only">تجهيز الماكينة لكل وجه<input data-field="pressSetup" type="number" min="0" value="0"></label>
+            <label class="offset-only">عدد السحبات المحتسب<input data-field="pressImpressions" type="number" min="0" value="2000"></label>
+            <label class="offset-only">كلفة كل 1,000 سحبة (ريال)<input data-field="pressPerThousand" type="number" min="0" value="3000"></label>
+            <label class="digital-only">كلفة النقرة/الوجه الواحد<input data-field="clickUnit" type="number" min="0" value="8"></label>
+            <label class="digital-only">نقرات لكل فرخ/وجه<input data-field="clicksPerSheet" type="number" min="1" value="1"></label>
+            <label class="digital-only">حبر إضافي لكل 1,000 نقرة<input data-field="inkPerThousand" type="number" min="0" value="0"></label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h3>٣. ما قبل الطباعة <small>أدخل كلفة الوحدة للنسخة الواحدة</small></h3>
+          <div class="field-grid">
+            <label>سولوفان/تغليف للنسخة<input data-field="laminationPerCopy" type="number" min="0" step="0.1" value="2.5"></label>
+            <label>بصمة حرارية/فويل للنسخة<input data-field="foilPerCopy" type="number" min="0" value="0"></label>
+            <label>يوفي موضعي للنسخة<input data-field="uvPerCopy" type="number" min="0" value="0"></label>
+            <label>قص/تكسير/تجليد للنسخة<input data-field="bindingPerCopy" type="number" min="0" value="0"></label>
+            <label>تجهيزات ما بعد الطباعة للطلبية<input data-field="finishSetup" type="number" min="0" value="0"></label>
+            <label>تكاليف مباشرة أخرى<input data-field="otherDirect" type="number" min="0" value="0"></label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h3>٤. المصاريف والتسعير</h3>
+          <div class="field-grid">
+            <label>حصة الإيجار/الكهرباء<input data-field="overheadFixed" type="number" min="0" value="1800"></label>
+            <label>حصة الرواتب/العمالة<input data-field="laborFixed" type="number" min="0" value="2200"></label>
+            <label>مصاريف غير مباشرة كنسبة (%)<input data-field="overheadPct" type="number" min="0" value="0"></label>
+            <label>زيادة الربح على التكلفة (%)<input data-field="markupPct" type="number" min="0" value="30"></label>
+            <label>ضريبة/رسوم (%)<input data-field="taxPct" type="number" min="0" value="0"></label>
+            <label>الخصم للعميل (%)<input data-field="discountPct" type="number" min="0" max="100" value="0"></label>
+            <label>صلاحية العرض<input data-field="validity" value="7 أيام"></label>
+            <label>شروط/ملاحظات<input data-field="terms" placeholder="مثال: 50% مقدماً"></label>
+          </div>
+        </div>
+
+        <div class="form-group shop-settings">
+          <h3>إعدادات العرض وهوية مطبعتك</h3>
+          <div class="field-grid">
+            <label>اسم المطبعة<input data-field="shopName" placeholder="اسم مطبعتك"></label>
+            <label>هاتف المطبعة<input data-field="shopPhone" placeholder="+967..."></label>
+          </div>
+        </div>
       </div>
-      <aside class="quote-card results-card"><div class="quote-top"><div><strong>ملخص التكلفة وعرض السعر</strong><p>تحديث فوري من مدخلاتك</p></div><span class="live-chip">مباشر</span></div><div class="production-summary" id="production-summary"></div><div class="totals detailed-totals" id="cost-breakdown"></div><div class="totals final-totals"><div class="total"><span>التكلفة الكاملة للطلبية</span><b id="total-cost">—</b></div><div><span>الربح قبل الضريبة</span><b id="profit-value">—</b></div><div class="selling"><span>سعر البيع النهائي</span><b id="selling-price">—</b></div><div><span>سعر البيع لكل نسخة</span><b id="unit-price">—</b></div></div><div class="quote-actions"><button class="button" id="save-order">حفظ الطلبية</button><button class="button button-outline" id="export-pdf">📄 طباعة / PDF</button><button class="button button-outline" id="share-wa">💬 واتساب</button></div><div class="saved-orders" id="saved-orders"></div></aside>
+
+      <aside class="quote-card results-card">
+        <div class="quote-top">
+          <div><strong>ملخص التكلفة وعرض السعر</strong><p>تحديث فوري من مدخلاتك</p></div>
+          <span class="live-chip">مباشر</span>
+        </div>
+        <div class="production-summary" id="production-summary"></div>
+        <div class="totals detailed-totals" id="cost-breakdown"></div>
+        <div class="totals final-totals">
+          <div class="total"><span>التكلفة الكاملة للطلبية</span><b id="total-cost">—</b></div>
+          <div><span>الربح قبل الضريبة</span><b id="profit-value">—</b></div>
+          <div class="selling"><span>سعر البيع النهائي</span><b id="selling-price">—</b></div>
+          <div><span>سعر البيع لكل نسخة</span><b id="unit-price">—</b></div>
+        </div>
+        <div class="quote-actions">
+          <button class="button" id="save-order">حفظ الطلبية</button>
+          <button class="button button-outline" id="export-pdf">📄 طباعة / PDF</button>
+          <button class="button button-outline" id="share-wa">💬 واتساب</button>
+        </div>
+        <div class="saved-orders" id="saved-orders"></div>
+      </aside>
     </div>
   </div></section>
+
   <section class="section faq" id="faq"><div class="container faq-layout"><div class="section-title"><span class="eyebrow">الأسئلة الشائعة</span><h2>أسئلة يسألها أصحاب المطابع دائماً</h2></div><div class="faq-list">
     <details open><summary>هل يمكن استخدام التطبيق بدون إنترنت؟</summary><p>نعم، يعمل بكامل طاقته بدون الحاجة لإنترنت وبسرعة تامة — سواء في صالة الطباعة أو الميدان أو عند انقطاع الشبكة، ويحفظ بياناتك محلياً بشكل فوري وآمن.</p></details>
     <details><summary>هل أستطيع وضع اسم مطبعتي على عرض السعر؟</summary><p>نعم، أدخل اسم المطبعة وهاتفها وشروط العرض في إعدادات التسعير، وتظهر في العرض القابل للطباعة.</p></details>
     <details><summary>أين تحفظ بياناتي وهل تتزامن بين الأجهزة؟</summary><p>تُحفظ الطلبيات في المتصفح على الجهاز الحالي. لا تُرسل إلى خادم ولا تتزامن تلقائياً بين الأجهزة؛ استخدم النسخ الاحتياطي لنقلها يدوياً.</p></details>
     <details><summary>هل التطبيق مناسب لمطابع الأوفست والديجيتال معاً؟</summary><p>نعم، صُمِّم خصيصاً ليغطي مطابع الأوفست التجارية، ومطابع الديجيتال وسرعة سحب الورق، ومطابع الفلكس والتغليف وجميع مراحل ما بعد الطباعة.</p></details>
   </div></div></section>
+  
   <section class="closing"><div class="container"><span class="eyebrow">النجوم للطباعة</span><h2>تسعير أوضح، وقرار أسرع لكل طلبية</h2><p>نظامك الخاص لإدارة تكاليف الطباعة وحفظ عروض الأسعار والطلبيات على جهازك.</p><a class="button button-light" href="#calculator">افتح حاسبة التسعير</a><small>ملكية خاصة • بيانات محلية • أداة مباشرة</small></div></section>
 </main>
 <footer><div class="container footer-row"><a class="brand" href="#top"><img src="assets/alnojoom-mark.svg" alt=""><span>النجوم للطباعة</span></a><div><a href="#calculator">حاسبة التسعير</a><a href="#features">عن التطبيق</a><a href="#faq">الأسئلة الشائعة</a></div><small>© 2026 النجوم للطباعة — نظام التسعير. جميع الحقوق محفوظة.</small></div></footer>
